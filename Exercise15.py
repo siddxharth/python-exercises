@@ -10,11 +10,11 @@ def rev_str(sentence):
     rev_str = sentence
     sentence = ''
     while i>=0:
-        sentence += rev_str[i]
+        sentence += rev_str[i] + ' '
         i-=1
     return sentence
 
 sentence = get_input()
-str_to_list(sentence)
+sentence = str_to_list(sentence)
 sentence = rev_str(sentence)
 print(sentence)
